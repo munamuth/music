@@ -17,4 +17,29 @@
 
 Route::group(['middleware' => ['web'] ], function() {
 	Route::get('/','MyHomeController@index');
+	Route::get('/musicall','MyHomeController@all');
 });
+
+Route::group(['middleware' => ['web'] ], function() {
+	Route::get('/admin/music','MusicController@index');
+	Route::get('/admin/music/show/{id}','MusicController@show');
+	Route::post('/admin/music/store','MusicController@store');
+	Route::get('/admin/music/all','MusicController@all');
+});
+
+
+Route::group(['middleware' => ['web'] ], function() {
+	Route::get('/admin/singer','SingerController@index');
+	Route::post('/admin/singer/store','SingerController@store');
+	Route::get('/admin/singer/all','MusicController@all');
+});
+
+Route::group(['middleware' => ['web'] ], function() {
+	Route::get('/admin/production','ProductionController@index');
+	Route::post('/admin/production/store','ProductionController@store');
+	Route::get('/admin/production/all','ProductionController@all');
+});
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
