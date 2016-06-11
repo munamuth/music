@@ -1,0 +1,40 @@
+body{
+	background-image: url("/asset/images/3.jpg");
+	background-size: cover ;
+}
+.con{
+	padding-top:80px;
+}
+.navbar-inverse audio{
+	width:100%;
+}
+.list-group-item:first-child{
+	border-radius:0px;
+	border-bottom: none;
+}
+.nav .border-bottom{
+	border-bottom:1px solid silver;
+}
+#btnAdd{
+	width:100%;
+}
+.no_radius{
+	border-radius:0px;
+}
+thead{
+	background-color: #f5f5f5;
+}
+.navbar-fixed-top{
+	opacity: 1;
+}
+.input-group-btn .btn,
+.input-group-btn .btn:hover{
+	border-left: none;
+}
+.padding-left{
+	padding-left: 10px;
+}
+
+.btn,.form-control, .panel{
+	border-radius:0px;
+}
